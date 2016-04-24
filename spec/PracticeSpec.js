@@ -24,7 +24,7 @@ describe("Practice", function() {
     expect(practice.kConstant(2705)).toEqual(6);
   });
 
-  it("should work input starts with one to three zeroes", function() {
+  it("should work when input number begins with zeroes", function() {
     expect(practice.kConstant(0125)).toEqual(7);
     expect(practice.kConstant(0052)).toEqual(2);
     expect(practice.kConstant(0005)).toEqual(6);
