@@ -31,7 +31,7 @@ Kaprekars.prototype.constant = function(num) {
 // 3rd call: 8532 - 2358 = 6174
 
 
-/* --------------------------------------- */
+/* ------------------------------------------ */
 
 function BlackjackHighest() {}
 
@@ -66,3 +66,29 @@ BlackjackHighest.prototype.hitMe = function(array) {
 // or 11. Your ace cannot be 11 if it puts you over 21. If it puts you at exactly
 // 21, such as with input ['ace', 'five', 'six'], your output should be 
 // "blackjack ace", since ace is your highest card.
+
+/* ------------------------------------------ */
+
+function StockPicker() {}
+
+StockPicker.prototype.highestProfit = function (array) {
+
+//Write the algorithm in here.
+         
+};
+
+//Context: 
+//
+//Very straightforward: write a function that will determine the highest profit.
+//
+//The input will be an array of stock prices for. Using [40, 45, 60] as an example,
+//stock price was 40 on day one, 45 on day two, 60 on day three, etc.
+//
+//Your goal is to calculate the highest profit possible. In the example above,
+//the highest profit is 20 because you bought the stock at 40, and then it risen
+//to 60. 60 - 40 = 20.
+//
+//If there is no profit, then return -1. Example of no profit: [5, 4, 3, 2, 1],
+//because the stock price kept going down.
+
+/* ------------------------------------------ */
