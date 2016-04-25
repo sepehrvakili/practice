@@ -3,7 +3,23 @@ function Practice() {
 
 Practice.prototype.kConstant = function(num) {
 
-//Write the algorithm in here!
+  var counter = 0;
+  if ( num === 6174 ) {
+    return counter;
+  } else {
+    counter += 1;
+  }
+  var num = num.toString().split('');
+  var descArray = num.sort(function(a, b) { return parseInt(b) - parseInt(a) });
+  while ( descArray.length < 4 ) {
+    descArray.push(0);
+  }
+  var ascArray = descArray.slice().sort();
+
+  var desc = parseInt(descArray.join(''));
+  var asc = parseInt(ascArray.join(''));
+  var diff = desc - asc;
+  return counter += this.kConstant(diff);
 
 };
 
